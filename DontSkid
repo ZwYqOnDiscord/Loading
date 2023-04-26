@@ -1,7 +1,7 @@
 local S,C = pcall(function() 
 local Loading = Instance.new("ScreenGui")
 Loading.Parent = game.CoreGui
-Loading.DisplayOrder = 999999999999
+Loading.DisplayOrder = 99999
 local Loading = Instance.new("ScreenGui")
 local ImageLabel = Instance.new("ImageLabel")
 local Tip = Instance.new("TextLabel")
