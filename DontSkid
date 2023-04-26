@@ -263,6 +263,8 @@ local function GESJSDH_fake_script() -- Loading.Manager
 	game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.PlayerList, true)
 	game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Chat, true)
 	game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.EmotesMenu, true)
+	Loading.Parent = game.CoreGui
+	Loading.DisplayOrder = 9999
 	wait(3)
 	script.Parent.Parent.Parent.Loading:Destroy()
 end
