@@ -1,7 +1,12 @@
 local S,C = pcall(function() 
 local Loading = Instance.new("ScreenGui")
 Loading.Parent = game.CoreGui
-Loading.DisplayOrder = 99999
+Loading.DisplayOrder = 9999
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
 local Loading = Instance.new("ScreenGui")
 local ImageLabel = Instance.new("ImageLabel")
 local Tip = Instance.new("TextLabel")
@@ -35,7 +40,7 @@ Loading.ResetOnSpawn = false
 ImageLabel.Parent = Loading
 ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageLabel.Position = UDim2.new(-0.000993045978, 0, -0.00246913638, 0)
-ImageLabel.Size = UDim2.new(1, 0, 1, 0)
+ImageLabel.Size = UDim2.new(1 0 1 0
 ImageLabel.Image = "http://www.roblox.com/asset/?id=13241750165"
 
 Tip.Name = "Tip"
@@ -146,7 +151,7 @@ Title.Name = "Title"
 Title.Parent = ImageLabel
 Title.BackgroundColor3 = Color3.fromRGB(115, 0, 255)
 Title.BackgroundTransparency = 1.000
-Title.Position = UDim2.new(0.161527574, 0, 0.171569318, 0)
+Title.Position = UDim2.new(0.183391184, 0, 0.166655317, 0)
 Title.Size = UDim2.new(0.632528603, 0, 0.232815996, 0)
 Title.Font = Enum.Font.FredokaOne
 Title.Text = "Storm Scripts 🖤"
@@ -165,7 +170,7 @@ Top.Size = UDim2.new(1, 0, 0.100000001, 0)
 
 -- Scripts:
 
-local function HMRCK_fake_script() -- Loading.DefaultUI 
+local function NAQWVO_fake_script() -- Loading.DefaultUI 
 	local script = Instance.new('LocalScript', Loading)
 
 	game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, false)
@@ -173,8 +178,8 @@ local function HMRCK_fake_script() -- Loading.DefaultUI
 	game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Chat, false)
 	game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.EmotesMenu, false)
 end
-coroutine.wrap(HMRCK_fake_script)()
-local function CHUOF_fake_script() -- Tip.Tips 
+coroutine.wrap(NAQWVO_fake_script)()
+local function ARCKYJ_fake_script() -- Tip.Tips 
 	local script = Instance.new('LocalScript', Tip)
 
 	local tip = script.Parent
@@ -188,8 +193,8 @@ local function CHUOF_fake_script() -- Tip.Tips
 		tip.Text = "SCRIPT IS CURRENTLY LOADING..."
 	end
 end
-coroutine.wrap(CHUOF_fake_script)()
-local function ULAFROZ_fake_script() -- Dots.Dots 
+coroutine.wrap(ARCKYJ_fake_script)()
+local function OHRDQ_fake_script() -- Dots.Dots 
 	local script = Instance.new('LocalScript', Dots)
 
 	while true do
@@ -211,8 +216,8 @@ local function ULAFROZ_fake_script() -- Dots.Dots
 		script.Parent.Dot4.InsideDot:TweenSize(UDim2.new(0,0,0,0), "In", "Sine", 0.25, true)
 	end
 end
-coroutine.wrap(ULAFROZ_fake_script)()
-local function PZKAB_fake_script() -- Percentage.Percentage 
+coroutine.wrap(OHRDQ_fake_script)()
+local function OECMN_fake_script() -- Percentage.Percentage 
 	local script = Instance.new('LocalScript', Percentage)
 
 	wait(5)
@@ -222,8 +227,8 @@ local function PZKAB_fake_script() -- Percentage.Percentage
 	end
 	
 end
-coroutine.wrap(PZKAB_fake_script)()
-local function WLMHXI_fake_script() -- Title.Script 
+coroutine.wrap(OECMN_fake_script)()
+local function YESIPAR_fake_script() -- Title.Script 
 	local script = Instance.new('Script', Title)
 
 	local r = {
@@ -246,8 +251,8 @@ local function WLMHXI_fake_script() -- Title.Script
 		if i == #r then i = 1. else i = i + 1. end
 	end
 end
-coroutine.wrap(WLMHXI_fake_script)()
-local function EMDD_fake_script() -- Loading.Manager 
+coroutine.wrap(YESIPAR_fake_script)()
+local function GESJSDH_fake_script() -- Loading.Manager 
 	local script = Instance.new('LocalScript', Loading)
 
 	local bar = script.Parent.Bar
@@ -268,6 +273,6 @@ local function EMDD_fake_script() -- Loading.Manager
 	wait(3)
 	script.Parent.Parent.Parent.Loading:Destroy()
 end
-coroutine.wrap(EMDD_fake_script)()
+coroutine.wrap(GESJSDH_fake_script)()
 end)
 print(S,C)
