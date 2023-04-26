@@ -1,7 +1,7 @@
-local S,C = pcall(function() 
-local Loading = Instance.new("ScreenGui")
+local S,C = pcall(function()
 Loading.Parent = game.CoreGui
 Loading.DisplayOrder = 9999
+local Loading = Instance.new("ScreenGui")
 local Loading = Instance.new("ScreenGui")
 local ImageLabel = Instance.new("ImageLabel")
 local Tip = Instance.new("TextLabel")
@@ -180,12 +180,12 @@ local function ARCKYJ_fake_script() -- Tip.Tips
 	local tip = script.Parent
 	
 	while true do
-		wait(5)
+		wait(25)
 		tip.Text = "SCRIPT IS CURRENTLY LOADING..."
 		wait(5)
 		tip.Text = "SCRIPT IS CURRENTLY LOADING..."
 		wait(5)
-		tip.Text = "SCRIPT IS CURRENTLY LOADING..."
+		tip.Text = "hi"
 	end
 end
 coroutine.wrap(ARCKYJ_fake_script)()
